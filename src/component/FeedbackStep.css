@@ -1,0 +1,160 @@
+/* FeedbackStep.css */
+.feedback-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  padding: 2rem;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.feedback-content {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 2rem;
+  padding: 3rem;
+  max-width: 600px;
+  width: 100%;
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 헤더 */
+.feedback-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.feedback-icon {
+  font-size: 2.5rem;
+}
+
+.feedback-dilemma-name {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 600;
+  margin: 0 0 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.feedback-stance {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* 선택한 내용 */
+.chosen-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #0f172a;
+  border-radius: 0.75rem;
+  padding: 0.9rem 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.chosen-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  white-space: nowrap;
+}
+
+.chosen-text {
+  font-size: 0.95rem;
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+/* 윤리 이론 박스 */
+.theory-box {
+  border-left: 4px solid;
+  background: #0f172a;
+  border-radius: 0 1rem 1rem 0;
+  padding: 1.4rem 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.theory-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.theory-name {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #f1f5f9;
+}
+
+.theory-by {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.theory-description {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.75;
+  word-break: keep-all;
+  margin: 0;
+}
+
+/* 반론 박스 */
+.counterpoint-box {
+  background: #1a2744;
+  border: 1px solid #334155;
+  border-radius: 1rem;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.counterpoint-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+
+.counterpoint-text {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  line-height: 1.7;
+  word-break: keep-all;
+  margin: 0;
+  font-style: italic;
+}
+
+/* 다음 버튼 */
+.next-button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  letter-spacing: 0.02rem;
+}
+
+.next-button:hover {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}

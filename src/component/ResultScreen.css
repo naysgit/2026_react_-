@@ -1,0 +1,204 @@
+/* ResultScreen.css */
+.result-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  padding: 3rem 1.5rem;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.result-content {
+  max-width: 620px;
+  width: 100%;
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 헤더 */
+.result-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.result-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #6366f1;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
+.tendency-icon {
+  font-size: 3.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.result-tendency {
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin: 0 0 0.8rem;
+  letter-spacing: -0.03rem;
+  word-break: keep-all;
+}
+
+.tendency-desc {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  line-height: 1.75;
+  word-break: keep-all;
+  margin: 0;
+}
+
+/* 선택 기록 */
+.choices-section,
+.dist-section {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.07rem;
+  margin: 0 0 1.2rem;
+}
+
+.choices-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.choice-record {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: #0f172a;
+  border-radius: 0.85rem;
+  padding: 0.9rem 1.1rem;
+}
+
+.choice-record-left {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.choice-num {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #334155;
+  flex-shrink: 0;
+}
+
+.choice-dilemma {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin: 0 0 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.choice-dilemma-icon {
+  font-size: 1rem;
+}
+
+.choice-selected {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.choice-selected strong {
+  color: #94a3b8;
+}
+
+.choice-theory-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  border: 1.5px solid;
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* 분포 */
+.dist-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.8rem;
+}
+
+.dist-row:last-child {
+  margin-bottom: 0;
+}
+
+.dist-label {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  font-weight: 600;
+  width: 130px;
+  flex-shrink: 0;
+}
+
+.dist-track {
+  flex: 1;
+  height: 8px;
+  background: #0f172a;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.dist-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.8s ease-out;
+}
+
+.dist-count {
+  font-size: 0.82rem;
+  color: #64748b;
+  font-weight: 700;
+  width: 36px;
+  text-align: right;
+}
+
+/* 다시 하기 */
+.restart-button {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border: 2px solid #334155;
+  border-radius: 1rem;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.restart-button:hover {
+  border-color: #6366f1;
+  color: #6366f1;
+  background: rgba(99, 102, 241, 0.05);
+}
